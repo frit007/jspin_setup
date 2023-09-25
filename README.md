@@ -21,9 +21,9 @@ Click the bat script to start the jSpin
 - You cannot move the folder after it has been generated because we have to reference scripts using absolute paths
 
 # WSL jSpin
-Copy spin_mix_setup.sh to a folder that does not have any spaces in its name. And run
+Copy spin_setup.sh to a folder that does not have any spaces in its name. And run
 ```
-wsl ./spin_mix_setup.sh
+wsl ./spin_setup.sh
 ```
 Click the bat script to start the jSpin
 
