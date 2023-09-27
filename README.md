@@ -9,7 +9,7 @@ You need WSL version 2 if you want to run the jSpin through WSL. The scripts ass
 You have the option to run the application. Either run jSpin through windows or run it through WSL. Each option comes with its own drawbacks.
 
 # (Recommended) Windows jSpin 
-Copy spin_mix_setup.sh to a folder that does not have any spaces in its name. And run
+Copy spin_mix_setup.sh to a folder that does not have any spaces in its name. It must also be a windows path, since the bat scripts make that assumption. And run
 ```
 wsl ./spin_mix_setup.sh
 ```
@@ -30,3 +30,11 @@ Click the bat script to start the jSpin
 ## WSL jSpin known drawbacks
 - Interactive does not work
 - UI bugs, on one computer if you minimize the window you cannot open it again.
+
+
+# Errors
+If you encounter the error ```/bin/bash^m bad interpreter``` run the command
+```
+sed -i -e 's/\r$//' spin_mix_setup.sh spin_setup.sh
+```
+
